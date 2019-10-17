@@ -1,5 +1,6 @@
 body{
 	background-color: #8A96A3;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 img{
@@ -11,4 +12,23 @@ img{
 	border-top: solid black;
 	padding: 30px;
 	margin-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
 }

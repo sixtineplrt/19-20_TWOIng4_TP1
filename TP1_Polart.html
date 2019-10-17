@@ -4,79 +4,80 @@
 	<title>Sixtine Polart</title>
 	<meta charset="utf-8">
 	<!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="tp1.css">
 </head>
 <body>
 
-<header>
-  	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-	    <div class="collapse navbar-collapse" id="navbarCollapse">
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<div class="collapse navbar-collapse" id="navbarCollapse">
 
-    		<ul class="navbar-nav float-right">
-				<li class="nav-item ml-4">
-              		<a class="btn btn-secondary" href="exp.html" role="button">Expériences</a>
-            	</li>
-        		
-        		<li class="nav-item ml-4">
-              		<a class="btn btn-secondary" href="exp.html" role="button">Compétences</a>
-            	</li>
+				<ul class="navbar-nav float-right">
+					<li class="nav-item ml-4">
+						<a class="btn btn-secondary" href="exp.html" role="button">Expériences</a>
+					</li>
 
-        		<li class="nav-item ml-4">
-              		<a class="btn btn-secondary" href="jspquoi.html" role="button">blabla</a>
-            	</li>
-        	</ul>
-    	</div>
-  	</nav>
-</header>
+					<li class="nav-item ml-4">
+						<a class="btn btn-secondary" href="exp.html" role="button">Compétences</a>
+					</li>
 
-<main role=main class="text-center">
-	<img class="img-circle center-block" src="img/moi.jpg">
-	<h2>Sixtine Polart</h2>
-	<h3>ECE Paris</h3>
-	<h4>21 ans</h4>
+					<li class="nav-item ml-4">
+						<a class="btn btn-secondary" href="jspquoi.html" role="button">blabla</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
-<div class="row">
-	<div class="col-lg-6">
-		<h3>Contact</h3>
-		<p>1 rue Gutenberg, 75015 Paris</p>
-		<p>sixtine.polart@gmail.com
-			<a onclick="document.getElementById('form').style.display='block'" href="form.php">
-          	<span class="glyphicon glyphicon-envelope"></span>
-        	</a>
-    	</p>
-		<p>07 83 53 46 46</p>
-	</div>
+	<main role=main class="text-center">
+		<img class="img-circle center-block" src="img/moi.jpg">
+		<h2>Sixtine Polart</h2>
+		<h3>ECE Paris</h3>
+		<h4>21 ans</h4>
 
-	<div class="col-lg-6">
-		<h3>A propos</h3>
-		<p>blablabl</p>
-	</div>
-</div>
-	
-</main>
+		<div class="row">
+			<div class="col-lg-6">
+				<h3>Contact</h3>
+				<p>1 rue Gutenberg, 75015 Paris</p>
+				<p>sixtine.polart@gmail.com
+					<span onclick="document.getElementById('form').style.display='block'" type="button" class="glyphicon glyphicon-envelope"></a>
+					</p>
+					<p>07 83 53 46 46</p>
+				</div>
 
-<div id="form" class="modal">
-  	<form class="modal-content animate" action="form.php" method="POST">
-		<div class="container">
-    		<label for="Nom"><b>Nom</b></label><br>
-      		<input type="text" placeholder="Nom" name="Nom"><br><br>
+				<div class="col-lg-6">
+					<h3>A propos</h3>
+					<p>blablabl</p>
+				</div>
+			</div>
 
-      		<label for="MDP"><b>Email</b></label><br>
-      		<input type="text" placeholder="Email" name="email" required><br><br>
+		</main>
 
-      		<label></label>
-        
-      		<button class="submit" name="Envoyer" type="submit">Envoyer</button><br><br>
-    	</div>
-    </form>
-</div>
+		<div id="form" class="modal">
+			<form class="modal-content animate" action="form.php" method="POST">
 
-<footer class="text-center">
-	<a href="https://www.linkedin.com/in/sixtine-polart-57523b173/">LinkedIN</a>
-	<a href="https://www.facebook.com/">Facebook</a>
-</footer>
+				<div class="container">
+					<label for="Nom"><b>Nom</b></label><br>
+					<input type="text" placeholder="Nom" name="Nom" required><br><br>
 
-</body>
-</html>
+					<label for="MDP"><b>Email</b></label><br>
+					<input type="text" placeholder="Email" name="email" required><br><br>
+
+					<label for="message"><b>Votre message</b></label><br>
+					<input type="textarea" placeholder="Message" name="message" required><br><br>
+
+					<button class="submit" name="Envoyer" type="submit">Envoyer</button>
+					<button onclick="document.getElementById('form').style.display='none'">Annuler</button>
+				</div>
+			</form>
+		</div>
+
+		<footer class="text-center">
+			<a href="https://www.linkedin.com/in/sixtine-polart-57523b173/">LinkedIN</a>
+			<a href="https://www.facebook.com/sixtine.polart">Facebook</a>
+		</footer>
+
+	</body>
+	</html>
