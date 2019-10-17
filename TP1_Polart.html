@@ -15,16 +15,20 @@
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 
 				<ul class="navbar-nav float-right">
+					<li class="nav-item">
+						<a class="btn btn-secondary" href="TP1_Polart.html" role="button">Home</a>
+					</li>
+
 					<li class="nav-item ml-4">
 						<a class="btn btn-secondary" href="exp.html" role="button">Expériences</a>
 					</li>
 
 					<li class="nav-item ml-4">
-						<a class="btn btn-secondary" href="exp.html" role="button">Compétences</a>
+						<a class="btn btn-secondary" href="comp.html" role="button">Compétences</a>
 					</li>
 
-					<li class="nav-item ml-4">
-						<a class="btn btn-secondary" href="jspquoi.html" role="button">blabla</a>
+					<li class="nav-item ml-5">
+						<a class="btn btn-secondary glyphicon glyphicon-download-alt" role="button"></a>
 					</li>
 				</ul>
 			</div>
@@ -42,23 +46,25 @@
 				<h3>Contact</h3>
 				<p>1 rue Gutenberg, 75015 Paris</p>
 				<p>sixtine.polart@gmail.com
-					<span onclick="document.getElementById('form').style.display='block'" type="button" class="glyphicon glyphicon-envelope"></a>
-					</p>
-					<p>07 83 53 46 46</p>
-				</div>
-
-				<div class="col-lg-6">
-					<h3>A propos</h3>
-					<p>blablabl</p>
-				</div>
+					<span onclick="document.getElementById('form').style.display='block'" type="button" class="glyphicon glyphicon-envelope"></a></span>
+				</p>
+				<p>07 83 53 46 46</p>
 			</div>
+
+			<div class="col-lg-6">
+				<h3>A propos</h3><br><br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/9WyZWvpZiB4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+
 
 		</main>
 
 		<div id="form" class="modal">
 			<form class="modal-content animate" action="form.php" method="POST">
 
-				<div class="container">
+				<span class="container">
+					<br><h4>Envoyez un mail à Sixtine</h4>
 					<label for="Nom"><b>Nom</b></label><br>
 					<input type="text" placeholder="Nom" name="Nom" required><br><br>
 
@@ -69,8 +75,8 @@
 					<input type="textarea" placeholder="Message" name="message" required><br><br>
 
 					<button class="submit" name="Envoyer" type="submit">Envoyer</button>
-					<button onclick="document.getElementById('form').style.display='none'">Annuler</button>
-				</div>
+					<button onclick="document.getElementById('form').style.display='none'">Annuler</button><br><br>
+				</span>
 			</form>
 		</div>
 
